@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?12kegg');
+  src:  url('fonts/icomoon.eot?12kegg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?12kegg') format('truetype'),
+    url('fonts/icomoon.woff?12kegg') format('woff'),
+    url('fonts/icomoon.svg?12kegg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: #363636;
+	width: 80%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+.header {
+	background: url(bg.jpg) center;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 3rem;
+}
+
+.header-text {
+	padding-top: 20px;
+	text-shadow: 0 0 1px pink;
+}
+
+.menu {
+	height: 45px;
+	background: #000;
+	border-bottom: 2px solid pink;
+	margin-bottom: 20px;
+	position: relative;
+}
+.menu ul {
+	font-family: 'Bungee Inline', cursive;
+	text-align: center;
+	padding: 10px 0px;
+}
+.menu ul li {
+	display: inline;
+	margin-left: 15px;
+	font-size: 22px;
+	color: pink;
+	text-transform: uppercase;
+}
+
+.menu ul li a{
+	color: pink;
+}
+
+.menu ul li a:hover {
+	color: #ce5897;
+}
+
+.menu ul li:before {
+	content: "❤";
+	padding-right: 15px;
+	vertical-align: middle;
+	font-size: 15px;
+}
+
+.menu ul li:first-child:before {
+	content: "";
+}
+
+.logout {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	border: 2px solid pink;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	color: pink;
+	padding: 5px;
+}
+
+.logout:hover {
+	color: #ce5897;
+	border-color: #ce5897;
+}
+
+.account {
+	background-color: rgba(85, 85 ,85, 0.6);
+	width: 100%;
+	height: 100px;
+	padding: 18px 50px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.acc-avatar {
+	box-sizing: border-box;
+	width: 70px;
+	height: 70px;
+	border: 3px solid pink;
+	float: left;
+	margin-right: 15px;
+}
+
+.account h3 {
+	float: left;
+	width: 650px;
+	border-bottom: 1px solid pink;
+	font-family: 'Bungee Inline', cursive;
+	color: pink;
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+
+}
+
+.account-credits {
+	float: right;
+}
+
+.acc-buy-credits {
+	font-family: 'Bungee Inline', cursive;
+	text-transform: uppercase;
+	font-size: 15px;
+	background-color: pink;
+	color: #ce5897;
+	padding: 15px 20px;
+	line-height: 70px;
+}
+
+.acc-buy-credits:hover {
+	color: pink;
+	background-color: #ce5897;
+}
+
+.acc-settings:before {
+	content: "\e994";
+	padding-right: 5px;
+	font-family: 'icomoon';
+	color: pink;
+}
+
+.acc-acc:before {
+	content: "\e971";
+	padding-right: 5px;
+	font-family: 'icomoon';
+	color: pink;
+}
+
+.acc-inventory:before {
+	content: "\e915";
+	padding-right: 5px;
+	font-family: 'icomoon';
+	color: pink;
+}
+
+.account-menu li {
+	display: inline;
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 5px;
+}
+
+.account-menu li a {
+	color: pink;
+}
+
+.account-menu li a:hover {
+	color: #ce5897;
+}
+
+.roulette-panel {
+	background-color: black;
+	height: 450px;
+	margin-bottom: 20px;
+}
+
+.roulette-tittle {
+	background-color: #ce5897;
+	padding: 10px 0 10px 40px;
+	font-size: 3rem;
+	font-family: 'Bungee Inline', cursive;
+	text-shadow: 0 0 2px white;
+	position: relative;
+}
+
+.roulette-box {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	z-index: 100;
+}
+
+.roulette-out {
+	width: 71%;
+	height: 210px;
+	border: 2px solid pink;
+	margin: 50px auto 25px;
+	position: relative;
+	overflow: hidden;
+	background-color: #363636;
+}
+
+.roulette-in {
+	width: 19700px;
+	height: 130px;
+	position: relative;
+}
+
+.roulette-selector {
+	position: absolute;
+}
+.vertical {
+	margin-left: 50%;
+	z-index: 10;
+}
+.img-awp {
+	width: 95% !important;
+    position: absolute;
+    left: 5px;
+}
+
+.box-awp-img {
+	border: 1px solid rgb(220, 162, 193);
+    display: inline-block;
+    width: 175px;
+    height: 125px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-top: 40px;
+    margin-left: 6px;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.roulette-box-name {
+	background: rgba(206,88,151,.4);;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 0px 10px;
+    margin: 0px;
+    width: 100%;
+    font-size: 16.27px;
+    line-height: 15px;
+    color: rgb(206,88,151);
+    text-shadow: 0 0 1px white;
+}
+
+.roulette-box-name i {
+	font-style: normal;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 16.91px;
+    line-height: 10px;
+}
+
+img.img-awp.rare {
+	top: -10%;
+}
+
+.roulette-btn {
+	text-align: center;
+}
+
+.roulette-btn__button, .roulette-award__btn {
+	text-transform: uppercase;
+	font-size: 16px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 30px 6px;
+	background-color: rgb(220, 162, 193);
+	border: none;
+	color: #ce5897;
+	cursor: pointer;
+}
+
+.roulette-award__btn {
+	margin-left: 40px;
+}
+
+ .roulette-btn__button:hover, .roulette-award__btn:hover   {
+	background-color: #ce5897;
+	color: pink;
+}
+
+.roulette-btn__button:active, .roulette-award__btn:active {
+	border: solid 1px;
+	box-sizing: border-box;
+}
+
+.roulette-award__safari, .roulette-award__rare{
+	display: none;
+}
+
+.roulette-award {
+	position: absolute;
+	box-shadow: 0 0 0 99999px rgba(0,0,0,.5);
+	z-index: 9999;
+	left: 42%;
+	top: 40%;
+	background-color: #363636;
+	padding: 10px;
+	width: 200px;
+}
+
+.roulette-award .box-awp-img {
+	margin: 0 0 0 12px;
+}
+
+.roulette-award__text, .roulette-award__safari-box, .roulette-award__rare-box {
+	float: left;
+}
+
+.roulette-award__text {
+	text-align: center;
+	color: pink;
+}
+
+.roulette-award__rare h4 {
+	font-size: 30px;
+	text-shadow: 0 0 2px white;
+	line-height: 5px;
+}
