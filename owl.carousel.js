@@ -1791,7 +1791,7 @@
 	 * The jQuery Plugin for the Owl Carousel
 	 * @public
 	 */
-	$.fn.owlCarousel = function(options) {
+	owlCarousel = function(options) {
 		return this.each(function() {
 			if (!$(this).data('owlCarousel')) {
 				$(this).data('owlCarousel', new Owl(this, options));
@@ -1803,7 +1803,7 @@
 	 * The constructor for the jQuery Plugin
 	 * @public
 	 */
-	$.fn.owlCarousel.Constructor = Owl;
+	owlCarousel.Constructor = Owl;
 
 })(window.Zepto || window.jQuery, window, document);
 
@@ -3067,3 +3067,24 @@
 	$.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
 
 })(window.Zepto || window.jQuery, window, document);
+
+//default settings:
+autoplay:false
+autoplayTimeout:5000
+autoplayHoverPause:false
+
+var owl = $('.owl-stage');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('autoplay.play.owl',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('autoplay.stop.owl')
+})

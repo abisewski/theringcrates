@@ -9,6 +9,7 @@
   font-style: normal;
 }
 
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -338,4 +339,8 @@ img.img-awp.rare {
 	font-size: 30px;
 	text-shadow: 0 0 2px white;
 	line-height: 5px;
+}
+
+.roulette-award__btn a {
+	color: pink;
 }
