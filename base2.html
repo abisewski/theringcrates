@@ -32,7 +32,7 @@
           To rescue it just go to your inventory. It's there.
         <hr>
           </div>
-          <a href="base3.html"><button class="roulette-award__btn">Close</button></a>
+          <a href="base3.html"><button class="roulette-award__btn">Redeem</button></a>
         </div>
     </div>
     <div class="roulette-award roulette-award__rare">
@@ -68,7 +68,9 @@
     		</ul>
     	</div>
     	<div class="account">
-    		<div class="account-credits"><a href="#" class="acc-buy-credits">Add Credits</a></div>
+    		<div class="account-credits">
+          <span class="account-current-credits" id="credits">$ 6.00</span>
+          <a href="#" class="acc-buy-credits">Add Credits</a></div>
     		<img src="avatar.jpg" class="acc-avatar"/>
     		<h3>k0d</h3><br><br><br>
     		<ul class="account-menu">
@@ -944,7 +946,7 @@
           </div>
         </div> <!--fim roulette-out-->
         <div class="roulette-btn">
-          <button id="play_button" class="roulette-btn__button play" onclick="rodaARoda()">Open Case</button>
+          <button id="play_button" class="roulette-btn__button play" onclick="rodaARoda(), altera()">Open Case</button>
         </div>
         </div>
       </div>

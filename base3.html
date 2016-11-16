@@ -38,7 +38,7 @@
     <div class="roulette-award roulette-award__rare" id="premio-loco2">
       <div class="roulette-award__rare-box">
         <div class="roulette-award__text">
-          Congratulations, k0d! You just won the RARE ITEM!!!
+          Nada é mais valioso do que você na minha vida.
         </div>
           <div class="box-awp-img owl-item">
                   <img src="skins/rare.png" class="img-awp rare">
@@ -48,8 +48,8 @@
                     </h4>
                   </div>
           <div class="roulette-award__text">
-          To rescue it just go to your inventory. It's there.
-        <hr>
+          <span class="love-text">Eu amo você alenito.</span>
+          <hr>
           </div>
           <a href="base.html"><button class="roulette-award__btn">Close</button></a>
         </div>
@@ -68,7 +68,9 @@
     		</ul>
     	</div>
     	<div class="account">
-    		<div class="account-credits"><a href="#" class="acc-buy-credits">Add Credits</a></div>
+    		<div class="account-credits">
+          <span class="account-current-credits" id="credits">$ 3.00</span>
+          <a href="#" class="acc-buy-credits">Add Credits</a></div>
     		<img src="avatar.jpg" class="acc-avatar"/>
     		<h3>k0d</h3><br><br><br>
     		<ul class="account-menu">
@@ -944,7 +946,7 @@
           </div>
         </div> <!--fim roulette-out-->
         <div class="roulette-btn">
-          <button id="play_button" class="roulette-btn__button play" onclick="rodaARoda()">Open Case</button>
+          <button id="play_button" class="roulette-btn__button play" onclick="rodaARoda(), altera()">Open Case</button>
         </div>
         </div>
       </div>

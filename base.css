@@ -344,3 +344,19 @@ img.img-awp.rare {
 .roulette-award__btn a {
 	color: pink;
 }
+
+.account-current-credits {
+	color: pink;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	margin-right: 14px;
+	vertical-align: middle;
+}
+
+.love-text {
+	margin-left: 28px;
+	margin-top: 10px;
+}
+hr {
+	margin-left: 28px;
+}

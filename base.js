@@ -11,7 +11,6 @@ function rodaARoda() {
 function amostraOTreco() {
 	document.getElementById('premio-loco').style.display = "block";
 }
-
-document.getElementById('play_button').onclick = function(){
-	rodaARoda();
-};
+function altera() {
+  document.getElementById("credits").innerHTML="$ 6.00";
+}
